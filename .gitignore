@@ -16,3 +16,8 @@
 
 # idea/goland
 .idea
+
+pangud.yml
+
+# log
+logs

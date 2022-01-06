@@ -1,0 +1,7 @@
+env: dev
+logger:
+  level: debug
+  encoding: console
+  outputPaths:
+    - "stdout"
+    - "./logs/pangud.log"

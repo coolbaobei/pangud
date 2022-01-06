@@ -1,16 +1,14 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"github.com/pangud/pangud/pkg/infrastructure/config"
+)
 
 func main() {
-	test(1)
+	fmt.Println(1)
 
-}
-
-type any interface {
-}
-
-//go:noinline
-func test[T1 any](y T1) {
-	fmt.Printf("%v", y)
+	config.LoadConfigFromFile(".")
+	endpoint := initEndpoint()
+	endpoint.Serve()
 }

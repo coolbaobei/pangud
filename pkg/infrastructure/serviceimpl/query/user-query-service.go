@@ -1,6 +1,6 @@
 package query
 
-import "github.com/pangud/pangud/pkg/applicaiton/query/dto"
+import "github.com/pangud/pangud/pkg/application/query/dto"
 
 type UserQueryServiceImpl struct {
 }
