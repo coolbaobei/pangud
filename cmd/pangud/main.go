@@ -1,14 +1,7 @@
 package main
 
-import (
-	"fmt"
-	"github.com/pangud/pangud/pkg/infrastructure/config"
-)
+import "github.com/pangud/pangud/cmd/pangud/cmd"
 
 func main() {
-	fmt.Println(1)
-
-	config.LoadConfigFromFile(".")
-	endpoint := initEndpoint()
-	endpoint.Serve()
+	cmd.Execute()
 }
